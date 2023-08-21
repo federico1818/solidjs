@@ -36,8 +36,11 @@ const Column = (props) => {
 
 export const Dnd = () => {
   const [containers, setContainers] = createStore<Record<string, number[]>>({
-    A: [1, 2, 3],
-    B: [4, 5, 6],
+    A: [1],
+    B: [2],
+    C: [3],
+    D: [4],
+    E: [5],
   });
 
   const containerIds = () => Object.keys(containers);
